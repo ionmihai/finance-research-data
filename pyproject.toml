@@ -17,6 +17,7 @@ dependencies = [
     "pandas>=2.1",
     "python-dotenv>=1.0",
     "wrds>=3.1",
+    "openpyxl>=3.1.2"
 ]
 
 [project.optional-dependencies]
@@ -27,6 +28,7 @@ dev = [
     "mypy>=1.10",
     "build>=1.2",
     "twine>=5.1",
+    "ipykernel>=6.29"
 ]
 
 [project.scripts]

@@ -19,6 +19,9 @@ dist/
 # Data directories
 **/data/**
 
+# Scratch notebooks used in dev
+**/notebooks_dev/**
+
 # Common data files
 *.parquet
 *.pq
