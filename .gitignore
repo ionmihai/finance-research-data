@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Build artifacts
+build/
+dist/
+
+# IDE
+.idea/
+.vscode/
+
+# Data directories
+**/data/**
+
+# Common data files
+*.parquet
+*.pq
+*.feather
+*.pkl
+*.pickle
+*.csv
+*.tsv
+*.txt
+*.jsonl
+*.json
+*.dta
+*.sas7bdat
+*.xpt
+*.sav
+*.zsav
+*.rds
+*.RData
+*.xlsx
+*.xls
+*.xlsm
+*.xlsb
+*.h5
+*.hdf5
+*.npz
+*.npy

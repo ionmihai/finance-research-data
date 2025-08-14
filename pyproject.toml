@@ -1,0 +1,19 @@
+[build-system]
+requires = ["hatchling>=1.21"]
+build-backend = "hatchling.build"
+
+[project]
+name = "finance-research-data"
+version = "0.1.0"
+description = "A new Python package scaffolded by newpackage."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {file = "LICENSE"}
+authors = [{name = "Mihai Ion"}]
+dependencies = []
+
+[project.scripts]
+finance_research_data = "finance_research_data.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/finance_research_data"]
