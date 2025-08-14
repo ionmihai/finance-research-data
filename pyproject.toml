@@ -5,12 +5,29 @@ build-backend = "hatchling.build"
 [project]
 name = "finance-research-data"
 version = "0.1.0"
-description = "A new Python package scaffolded by newpackage."
+description = "A Python package that downloads raw data commonly used in finance academic research."
 readme = "README.md"
 requires-python = ">=3.9"
-license = {file = "LICENSE"}
-authors = [{name = "Mihai Ion"}]
-dependencies = []
+license = { file = "LICENSE" }
+authors = [{ name = "Mihai Ion" }]
+
+# Runtime dependencies
+dependencies = [
+    "requests>=2.32",
+    "pandas>=2.1",
+    "python-dotenv>=1.0",
+    "wrds>=3.1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8",
+    "pytest-cov>=5",
+    "ruff>=0.5",
+    "mypy>=1.10",
+    "build>=1.2",
+    "twine>=5.1",
+]
 
 [project.scripts]
 finance_research_data = "finance_research_data.cli:main"
