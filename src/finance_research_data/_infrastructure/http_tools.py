@@ -128,7 +128,7 @@ def _heuristic_delimiter(sample_text: str, candidates: Tuple[str, ...] = (",", "
             best_score, best = score, d
     return best
 
-def detect_delimiter_at_url(url: str,
+def detect_delimiter_from_url(url: str,
                             headers: Optional[Dict[str, str]] = None,
                             timeout: Optional[float] = None,
                             nbytes: int = 65536) -> Optional[str]:

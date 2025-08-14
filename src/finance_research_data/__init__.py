@@ -13,7 +13,7 @@ from ._infrastructure.auth import (
 from ._infrastructure.http_tools import (
     fetch_bytes_from_url, 
     detect_filetype_from_url, 
-    detect_delimiter_at_url,
+    detect_delimiter_from_url,
     read_csv_from_url,
     read_excel_from_url,
     read_table_from_url,
